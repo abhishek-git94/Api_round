@@ -1,10 +1,9 @@
 import os
 
 # Candidate Information
-# Can be overridden by environment variables or default to the provided John Doe info
-CANDIDATE_NAME = os.getenv("CANDIDATE_NAME", "John Doe")
-CANDIDATE_REG_NO = os.getenv("CANDIDATE_REG_NO", "REG12347")
-CANDIDATE_EMAIL = os.getenv("CANDIDATE_EMAIL", "john@example.com")
+CANDIDATE_NAME = os.getenv("CANDIDATE_NAME", "Abhishek Pal")
+CANDIDATE_REG_NO = os.getenv("CANDIDATE_REG_NO", "0827AL231009")
+CANDIDATE_EMAIL = os.getenv("CANDIDATE_EMAIL", "ap036291@gmail.com")
 
 # Endpoints
 GENERATE_WEBHOOK_URL = "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/PYTHON"
