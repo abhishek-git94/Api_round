@@ -32,7 +32,7 @@ This application acts as a unified standalone pipeline that runs on start and co
 
 The workspace is structured cleanly as follows:
 * **[app.py](file:///c:/Users/ap036/Downloads/projects/bhfl_round1_practice/app.py):** Main entry point containing the full, self-contained implementation (analysis, cleaning, DSA, and API submission).
-* **[config.py](file:///c:/Users/ap036/Downloads/projects/bhfl_round1_practice/config.py):** Configuration layer holding candidate identity details (`Abhishek Pal`, `0827AL231009`, `ap036291@gmail.com`).
+* **[config.py](file:///c:/Users/ap036/Downloads/projects/bhfl_round1_practice/config.py):** Configuration layer holding candidate identity details (`Abhishek Pal`, `0827AL231009`, `abhishekpal230871@acropolis.in`).
 * **[sql_solutions.py](file:///c:/Users/ap036/Downloads/projects/bhfl_round1_practice/sql_solutions.py):** Documented central registry containing all verified static values and calculations for reference.
 * **[requirements.txt](file:///c:/Users/ap036/Downloads/projects/bhfl_round1_practice/requirements.txt):** Declares lightweight dependencies (`requests`, `pandas`).
 * **[.gitignore](file:///c:/Users/ap036/Downloads/projects/bhfl_round1_practice/.gitignore):** Standard rules to keep bytecode caches untracked.

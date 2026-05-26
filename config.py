@@ -3,7 +3,7 @@ import os
 # Candidate Information
 CANDIDATE_NAME = os.getenv("CANDIDATE_NAME", "Abhishek Pal")
 CANDIDATE_REG_NO = os.getenv("CANDIDATE_REG_NO", "0827AL231009")
-CANDIDATE_EMAIL = os.getenv("CANDIDATE_EMAIL", "ap036291@gmail.com")
+CANDIDATE_EMAIL = os.getenv("CANDIDATE_EMAIL", "abhishekpal230871@acropolis.in")
 
 # Endpoints
 GENERATE_WEBHOOK_URL = "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/PYTHON"

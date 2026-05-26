@@ -256,7 +256,7 @@ def run_assessment():
 
     reg_no = "0827AL231009"
     name = "Abhishek Pal"
-    email_id = "ap036291@gmail.com"
+    email_id = "abhishekpal230871@acropolis.in"
 
     url = "https://bfhldevapigw.healthrx.co.in/memgraph-visualization/get_linkage"
     headers = {
