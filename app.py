@@ -108,21 +108,23 @@ def run_assessment():
 
     # Q5: Longest contiguous subarray whose sum equals k
     def q5_function(nums, k):
-        # Type safety and null/empty value validation checks
-        if nums is None or not isinstance(nums, list) or len(nums) == 0:
+        if not nums:
             return 0
-            
-        # Standard O(n) prefix sum + hash map algorithm
-        prefix_sums = {0: -1}
-        curr_sum = 0
-        max_len = 0
-        for idx, val in enumerate(nums):
-            curr_sum += val
-            if (curr_sum - k) in prefix_sums:
-                max_len = max(max_len, idx - prefix_sums[curr_sum - k])
-            if curr_sum not in prefix_sums:
-                prefix_sums[curr_sum] = idx
-        return max_len
+
+        prefix_map = {0: -1}
+        current_sum = 0
+        longest = 0
+
+        for i in range(len(nums)):
+            current_sum += nums[i]
+
+            if current_sum - k in prefix_map:
+                longest = max(longest, i - prefix_map[current_sum - k])
+
+            if current_sum not in prefix_map:
+                prefix_map[current_sum] = i
+
+        return longest
 
     # Calculate q5 for the range(7) array passed in the notebook:
     # nums = [1 if i*i == 0 or (i - 6)**2 == 0 else 0 for i in range(7)] -> [1, 0, 0, 0, 0, 0, 1], k = 2
